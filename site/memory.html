@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory — Building Simple AI Agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="site-title">Building Simple AI Agents</a>
+    <span class="site-tagline">&#8226; A beginner&#8217;s manual</span>
+    <nav>
+      <a href="intro.html">What an agent is</a>
+      <a href="planning.html">Planning</a>
+      <a href="tool-use.html">Tool use</a>
+      <a href="memory.html" class="active">Memory</a>
+      <a href="safety.html">Safety</a>
+      <a href="mcp.html">MCP overview</a>
+      <a href="worksheet.html">Worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="hero no-print">
+  <h1>Memory: Remembering What Matters</h1>
+  <p class="lead">Memory is what lets an agent carry context from one step to the next, and from one conversation to another. Without memory, every new message starts from scratch.</p>
+</section>
+
+<h2>Two kinds of memory</h2>
+
+<p><strong>Short-term memory</strong> is what&#8217;s happening right now. If you tell an agent your name at the start of a conversation, short-term memory lets it use your name ten minutes later without asking again.</p>
+
+<p><strong>Long-term memory</strong> is what sticks around after the conversation ends. If you tell an agent you prefer plain English summaries, long-term memory lets it remember that preference next week.</p>
+
+<h2>How memory works in practice</h2>
+
+<p>Most agents remember by reading back what was written down &mdash; earlier messages in the conversation, notes in a file, or entries in a simple list. The agent doesn&#8217;t "remember" like a person does; it re-reads a record you or it created earlier.</p>
+
+<h2>What to remember (and what not to)</h2>
+
+<p>Good things to remember:</p>
+<ul>
+  <li>Your name and preferred way of being addressed</li>
+  <li>The goal you&#8217;re working toward</li>
+  <li>Steps already completed</li>
+  <li>Decisions you&#8217;ve made ("use budget airlines only")</li>
+</ul>
+
+<p>Things agents should not store:</p>
+<ul>
+  <li>Passwords, credit card numbers, Social Security numbers</li>
+  <li>Medical details about real people</li>
+  <li>Anything you wouldn&#8217;t write down and leave on a desk</li>
+</ul>
+
+<h2>You stay in control</h2>
+
+<p>You can always review what an agent has remembered, correct it, or delete it. Memory is a tool for you, not a secret file the agent keeps.</p>
+
+<div class="callout">
+  <span class="ctitle">Worksheet connection</span>
+  On the worksheet, write down three things your agent should remember about you or your project, and one thing it should never store.
+</div>
+
+<p><a href="safety.html" style="font-weight:600;">Next: Safety &#8594;</a> &nbsp;|&nbsp; <a href="tool-use.html" style="font-weight:600;">&#8592; Back: Tool use</a></p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="font-weight:700; color:var(--ink);">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and guides</div>
+    <div>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tool Use — Building Simple AI Agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="site-title">Building Simple AI Agents</a>
+    <span class="site-tagline">&#8226; A beginner&#8217;s manual</span>
+    <nav>
+      <a href="intro.html">What an agent is</a>
+      <a href="planning.html">Planning</a>
+      <a href="tool-use.html" class="active">Tool use</a>
+      <a href="memory.html">Memory</a>
+      <a href="safety.html">Safety</a>
+      <a href="mcp.html">MCP overview</a>
+      <a href="worksheet.html">Worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="hero no-print">
+  <h1>Tool Use: Letting an Agent Act</h1>
+  <p class="lead">Chatting is useful. Acting is more useful. Tool use is what lets an agent do things in the world &mdash; instead of only talking about them.</p>
+</section>
+
+<h2>What a tool is</h2>
+
+<p>A tool is a small, specific capability with a clear name and purpose. Examples:</p>
+
+<ul>
+  <li><strong>Web search</strong> &mdash; find current information online</li>
+  <li><strong>Calculator</strong> &mdash; do math reliably</li>
+  <li><strong>Draft email</strong> &mdash; write an email (but not send it without you)</li>
+  <li><strong>Read file</strong> &mdash; open a document on your computer</li>
+  <li><strong>Write file</strong> &mdash; save a document on your computer</li>
+</ul>
+
+<h2>How an agent uses tools</h2>
+
+<p>The flow looks like this:</p>
+
+<ol>
+  <li>The agent sees a task ("Find flights under $300").</li>
+  <li>It picks a tool ("web search") and decides what to ask it.</li>
+  <li>The tool runs and returns a result.</li>
+  <li>The agent reads the result and decides the next step (search again, or move on).</li>
+</ol>
+
+<p>The agent never touches your computer directly. The tool is the only thing that acts, and each tool does one narrow job.</p>
+
+<h2>Human in the loop</h2>
+
+<p>Some actions should never happen automatically:</p>
+
+<ul>
+  <li>Sending email or messages</li>
+  <li>Spending money</li>
+  <li>Deleting or changing records</li>
+  <li>Posting publicly</li>
+</ul>
+
+<p>For these, the agent drafts the action and asks you to approve it. You stay in control. The agent suggests; you decide.</p>
+
+<div class="callout">
+  <span class="ctitle">Start without code</span>
+  You can practice tool use today with no computer at all. On your worksheet, list three tools your agent might need and write one sentence about what each one does and when you&#8217;d want to approve its use.
+</div>
+
+<p><a href="memory.html" style="font-weight:600;">Next: Memory &#8594;</a> &nbsp;|&nbsp; <a href="planning.html" style="font-weight:600;">&#8592; Back: Planning</a></p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="font-weight:700; color:var(--ink);">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and guides</div>
+    <div>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</div>
+  </div>
+</footer>
+
+</body>
+</html>

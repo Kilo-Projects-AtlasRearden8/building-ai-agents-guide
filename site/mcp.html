@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Overview — Building Simple AI Agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="site-title">Building Simple AI Agents</a>
+    <span class="site-tagline">&#8226; A beginner&#8217;s manual</span>
+    <nav>
+      <a href="intro.html">What an agent is</a>
+      <a href="planning.html">Planning</a>
+      <a href="tool-use.html">Tool use</a>
+      <a href="memory.html">Memory</a>
+      <a href="safety.html">Safety</a>
+      <a href="mcp.html" class="active">MCP overview</a>
+      <a href="worksheet.html">Worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="hero no-print">
+  <h1>MCP Overview: Connecting Agents to Tools and Data</h1>
+  <p class="lead">MCP stands for <strong>Model Context Protocol</strong>. It sounds technical, but the idea is simple.</p>
+</section>
+
+<h2>The problem MCP solves</h2>
+
+<p>Right now, every time an AI agent wants to use a new tool &mdash; read your calendar, search your files, check a database &mdash; someone has to write custom code to connect them. Every tool needs its own custom connection.</p>
+
+<p>MCP is a single, shared way for agents to talk to tools and data sources. Think of it like USB-C for AI: one standard connector, many devices.</p>
+
+<h2>What MCP looks like in practice</h2>
+
+<p>An MCP server is a small program that exposes one capability:</p>
+
+<ul>
+  <li>A calendar server lets agents read and manage appointments</li>
+  <li>A files server lets agents read local documents</li>
+  <li>A database server lets agents query your data</li>
+  <li>A web-search server lets agents look things up</li>
+</ul>
+
+<p>The agent connects to the MCP server, asks what it can do, and then uses it &mdash; all through the same standard. You (or a developer) pick which servers to connect. The agent only sees what you let it see.</p>
+
+<h2>Why this matters for beginners</h2>
+
+<p>MCP means agents can grow with you without custom code for every new tool. You can start with an agent that has no tools, then add an MCP server for your calendar, another for your notes, and so on. Each connection is explicit and you control it.</p>
+
+<h2>Getting started</h2>
+
+<p>You don&#8217;t need to run an MCP server to use this guide. The worksheet helps you design which tools your agent would use, and MCP is one clean way to connect them when you&#8217;re ready.</p>
+
+<p>For more, see the official MCP documentation at <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">modelcontextprotocol.io</a>.</p>
+
+<p><a href="worksheet.html" style="font-weight:600;">Next: Printable worksheet &#8594;</a> &nbsp;|&nbsp; <a href="safety.html" style="font-weight:600;">&#8592; Back: Safety</a></p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="font-weight:700; color:var(--ink);">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and guides</div>
+    <div>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</div>
+  </div>
+</footer>
+
+</body>
+</html>

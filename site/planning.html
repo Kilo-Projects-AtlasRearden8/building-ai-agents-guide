@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planning — Building Simple AI Agents</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="site-title">Building Simple AI Agents</a>
+    <span class="site-tagline">&#8226; A beginner&#8217;s manual</span>
+    <nav>
+      <a href="intro.html">What an agent is</a>
+      <a href="planning.html" class="active">Planning</a>
+      <a href="tool-use.html">Tool use</a>
+      <a href="memory.html">Memory</a>
+      <a href="safety.html">Safety</a>
+      <a href="mcp.html">MCP overview</a>
+      <a href="worksheet.html">Worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section class="hero no-print">
+  <h1>Planning: Breaking a Goal Into Steps</h1>
+  <p class="lead">An agent without a plan is like a driver without a map &mdash; it might move, but probably not where you want it to go. Planning is the first and most important building block.</p>
+</section>
+
+<h2>What planning means for an agent</h2>
+
+<p>Planning means turning a big goal into a small, ordered list of steps the agent can work through one at a time. Each step should be concrete enough that the agent (or you) can tell when it&#8217;s done.</p>
+
+<h2>A simple example</h2>
+
+<p>Goal: "Plan a three-day trip to Chicago."</p>
+
+<p>A good plan looks like this:</p>
+
+<ol>
+  <li>Pick travel dates and how to get there</li>
+  <li>Find a place to stay within budget</li>
+  <li>Choose two or three things to do each day</li>
+  <li>Draft a simple day-by-day schedule</li>
+  <li>Show the schedule to you for approval</li>
+</ol>
+
+<p>Notice each step has a clear "done" signal. "Research Chicago" is too vague. "Choose two or three things to do" is specific.</p>
+
+<h2>How to write a plan</h2>
+
+<ol>
+  <li><strong>Write the goal in one sentence.</strong> Example: "Draft a weekly newsletter for my book club."</li>
+  <li><strong>Ask: what needs to happen before this is finished?</strong> List everything that comes to mind.</li>
+  <li><strong>Put the steps in order.</strong> Some things must happen first (you can&#8217;t send the newsletter before you write it).</li>
+  <li><strong>Mark steps that need your approval.</strong> Anything that sends email, spends money, or changes someone&#8217;s data gets a "you decide first" flag.</li>
+  <li><strong>Keep it short.</strong> Five to eight steps is plenty. You can always add more later.</li>
+</ol>
+
+<h2>Plans can change</h2>
+
+<p>Agents should be able to revise the plan if something goes wrong &mdash; a website is down, a tool gives a strange answer, or you change your mind. A plan is a suggestion, not a command.</p>
+
+<div class="callout">
+  <span class="ctitle">Worksheet connection</span>
+  Use the "Agent Goal &amp; Plan" section of the printable worksheet to sketch your first agent plan on paper before touching a computer.
+</div>
+
+<p><a href="tool-use.html" style="font-weight:600;">Next: Tool use &#8594;</a> &nbsp;|&nbsp; <a href="intro.html" style="font-weight:600;">&#8592; Back: What an agent is</a></p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="font-weight:700; color:var(--ink);">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and guides</div>
+    <div>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</div>
+  </div>
+</footer>
+
+</body>
+</html>
